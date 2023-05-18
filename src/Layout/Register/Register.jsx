@@ -1,8 +1,29 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import login from '../../assets/login.svg';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../Providers/AuthProviders';
 
 const Register = () => {
+    const { createUser } = useContext(AuthContext);
+
+    const handleSignUp = (event) => {
+        event.preventDefault();
+        const form = event.target;
+        const name = form.name.value;
+        const email = form.email.value;
+        const password = form.password.value;
+        const photo = form.photo.value;
+        // console.log(name, email, password, photo);
+        createUser(email, password)
+            .then(result => {
+                const user = result.user;
+                console.log(user);
+            })
+            .catch(error => {
+                console.log(error);
+            })
+
+    }
     return (
         <div className='bg-base-200'>
             <div className="hero min-h-screen max-w-6xl mx-auto">
@@ -11,7 +32,7 @@ const Register = () => {
                         <img className='pl-20' src={login} alt="" />
                     </div>
                     <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-                        <form>
+                        <form onSubmit={handleSignUp}>
                             <div className="card-body">
                                 <h1 className="text-3xl font-bold">Sign-Up now!</h1>
                                 <div className="form-control">
