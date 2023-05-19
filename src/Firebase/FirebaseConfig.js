@@ -10,10 +10,9 @@ const firebaseConfig = {
     projectId: "toy-cars-pro",
     storageBucket: "toy-cars-pro.appspot.com",
     messagingSenderId: "464130520936",
-    appId: "1:464130520936:web:91e5a433cef463bbb288dd"
+    appId: "1:464130520936:web:179fa160d3e13f2cb288dd"
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-
 export default app;

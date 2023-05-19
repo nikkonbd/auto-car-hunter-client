@@ -1,20 +1,20 @@
 import React, { useContext } from 'react';
 import login from '../../assets/login.svg';
-import { Link } from 'react-router-dom';
+import { Link, Navigate } from 'react-router-dom';
 import { AuthContext } from '../../Providers/AuthProviders';
 
 const Login = () => {
 
     const { signIn } = useContext(AuthContext);
 
+
     const handleLogin = (event) => {
         event.preventDefault();
         const form = event.target;
         const email = form.email.value;
         const password = form.password.value;
-        const userId = { email, password };
-        console.log(userId)
-        signIn(userId)
+        console.log(email, password)
+        signIn(email, password)
             .then((result) => {
                 const user = result.user;
                 console.log(user);
@@ -23,6 +23,8 @@ const Login = () => {
                 console.log(error);
             })
     }
+
+    <Navigate to={'/'}></Navigate>
 
     return (
         <div className='bg-base-200'>

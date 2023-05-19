@@ -14,8 +14,9 @@ const Header = () => {
 
     const navBar = <>
         <li><a><Link to={'/'}>Home</Link></a></li>
-        <li><a>All Toys</a></li>
+        <li><Link to={'/allToys'}>All Toys</Link></li>
         <li><a><Link to={'/blogs'}>Blogs</Link></a></li>
+        <li><a><Link to={'/addToys'}>Add a Toys</Link></a></li>
         {user ? <li><Link onClick={handleLogout} className='font-medium'>Logout</Link></li> : <li className='font-medium'><Link to={'/login'}>Login</Link></li>}
     </>
     return (

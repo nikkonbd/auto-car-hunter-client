@@ -3,8 +3,8 @@ import app from '../Firebase/FirebaseConfig';
 import { createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signOut, } from "firebase/auth";
 
 export const AuthContext = createContext();
-
 const auth = getAuth(app);
+
 const AuthProviders = ({ children }) => {
 
     const [user, setUser] = useState(null);

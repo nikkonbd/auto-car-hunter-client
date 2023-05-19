@@ -1,0 +1,134 @@
+[
+    {
+        "picture": "https://media.istockphoto.com/id/1316414600/photo/hands-of-little-child-boy-playing-with-multicolored-toy-cars-on-white-wooden-background.jpg?b=1&s=170667a&w=0&k=20&c=sC0rDcF4PZDoOQJzWylvtq4_NoNuIlSp2E5J6sOt__0=",
+        "toyName": "Toy Car",
+        "category": "Sports Car",
+        "sellerName": "John Doe",
+        "sellerEmail": "johndoe@example.com",
+        "price": 10.99,
+        "rating": 4.5,
+        "availableQuantity": 20,
+        "detailDescription": "This Toy Car is a great addition to any child's collection. It is made of high-quality plastic and features realistic details. The car measures 10 inches in length and 5 inches in width. Suitable for children aged 3 and above."
+    },
+    {
+        "picture": "https://images.pexels.com/photos/35967/mini-cooper-auto-model-vehicle.jpg?cs=srgb&dl=pexels-pixabay-35967.jpg&fm=jpg",
+        "toyName": "Mini Car",
+        "category": "Mini Car Truck",
+        "sellerName": "Jane Smith",
+        "sellerEmail": "janesmith@example.com",
+        "price": 14.99,
+        "rating": 4.2,
+        "availableQuantity": 15,
+        "detailDescription": "This beautiful doll is dressed in a pink outfit and comes with various accessories. It is perfect for imaginative play and is suitable for children aged 4 and above."
+    },
+    {
+        "picture": "https://i.ytimg.com/vi/utMMyf_N6us/maxresdefault.jpg",
+        "toyName": "Lego Set",
+        "sellerName": "Mike Johnson",
+        "category": "Regular Car",
+        "sellerEmail": "mikejohnson@example.com",
+        "price": 29.99,
+        "rating": 4.8,
+        "availableQuantity": 10,
+        "detailDescription": "This Lego Set contains 500 pieces and allows children to build various structures and objects. It enhances creativity and fine motor skills. Suitable for children aged 6 and above."
+    },
+    {
+        "picture": "https://m.media-amazon.com/images/I/91aVOFkXTBL._AC_SL1500_.jpg",
+        "toyName": "Stuffed Animal",
+        "category": "Sports Car",
+        "sellerName": "Sarah Davis",
+        "sellerEmail": "sarahdavis@example.com",
+        "price": 9.99,
+        "rating": 4.0,
+        "availableQuantity": 8,
+        "detailDescription": "This cute stuffed animal is incredibly soft and cuddly. It measures 12 inches in height and is the perfect companion for bedtime or playtime. Suitable for all ages."
+    },
+    {
+        "picture": "https://images.pexels.com/photos/381228/pexels-photo-381228.jpeg?cs=srgb&dl=pexels-mike-bird-381228.jpg&fm=jpg",
+        "toyName": "Remote Control Car",
+        "sellerName": "Mark Wilson",
+        "category": "Mini Police Car",
+        "sellerEmail": "markwilson@example.com",
+        "price": 39.99,
+        "rating": 4.6,
+        "availableQuantity": 5,
+        "detailDescription": "This remote control car is a high-speed racer with responsive controls. It operates on a 2.4GHz frequency and has a range of 100 meters. Suitable for children aged 8 and above."
+    },
+    {
+        "picture": "https://thumbs.dreamstime.com/b/toy-car-2670897.jpg",
+        "toyName": "Board Game",
+        "sellerName": "Emily Thompson",
+        "category": "Big Truck",
+        "sellerEmail": "emilythompson@example.com",
+        "price": 24.99,
+        "rating": 4.4,
+        "availableQuantity": 12,
+        "detailDescription": "This exciting board game challenges players to solve puzzles and navigate through an adventurous maze. It's perfect for family game nights and is suitable for players aged 10 and above."
+    },
+    {
+        "picture": "https://cdn.pixabay.com/photo/2017/02/19/19/57/bobby-car-2080779_640.jpg",
+        "toyName": "Puzzle",
+        "sellerName": "David Anderson",
+        "category": "Mini Sports Car",
+        "sellerEmail": "davidanderson@example.com",
+        "price": 12.99,
+        "rating": 4.7,
+        "availableQuantity": 18,
+        "detailDescription": "This jigsaw puzzle features 1000 pieces and a beautiful landscape design. It's a great way to relax and exercise your mind. Suitable for puzzle enthusiasts aged 12 and above."
+    },
+    {
+        "picture": "https://images.pexels.com/photos/35619/capri-ford-oldtimer-automotive.jpg?cs=srgb&dl=pexels-pixabay-35619.jpg&fm=jpg",
+        "toyName": "Action Figure",
+        "sellerName": "Jessica Lee",
+        "category": "Sports Car",
+        "sellerEmail": "jessicalee@example.com",
+        "price": 8.99,
+        "rating": 4.3,
+        "availableQuantity": 25,
+        "detailDescription": "This action figure is highly detailed and comes with multiple accessories. It's a must-have for fans of the popular superhero franchise. Suitable for children aged 5 and above."
+    },
+    {
+        "picture": "https://i.ytimg.com/vi/KOCWIOnStaQ/maxresdefault.jpg",
+        "toyName": "Art Set",
+        "sellerName": "Andrew Clark",
+        "category": "Truck",
+        "sellerEmail": "andrewclark@example.com",
+        "price": 19.99,
+        "rating": 4.1,
+        "availableQuantity": 7,
+        "detailDescription": "This art set includes a variety of art supplies such as pencils, paints, brushes, and a sketchbook. It's perfect for young artists and aspiring creators. Suitable for children aged 8 and above."
+    },
+    {
+        "picture": "https://media.istockphoto.com/id/1266251640/photo/cute-baby-girl-in-electric-toy-car.jpg?b=1&s=170667a&w=0&k=20&c=KZ_J6eAu_--WhZIGRtBz6bQ67slNYuy65WjCv-mcTS4=",
+        "toyName": "Building Blocks",
+        "sellerName": "Karen Roberts",
+        "category": "Regular Car",
+        "sellerEmail": "karenroberts@example.com",
+        "price": 16.99,
+        "rating": 4.9,
+        "availableQuantity": 30,
+        "detailDescription": "This set of building blocks includes various shapes and colors, allowing children to construct endless creations. It promotes spatial awareness and problem-solving skills. Suitable for children aged 3 and above."
+    },
+    {
+        "picture": "https://imgix.bustle.com/uploads/getty/2021/2/12/0dfb0321-c6d8-4f20-874c-dcc53d8f349d-getty-1273508556.jpg?w=540&fit=crop&crop=faces&auto=format%2Ccompress",
+        "toyName": "Building Blocks",
+        "sellerName": "Karen Roberts",
+        "category": "Sports Car",
+        "sellerEmail": "karenroberts@example.com",
+        "price": 16.99,
+        "rating": 4.9,
+        "availableQuantity": 30,
+        "detailDescription": "This set of building blocks includes various shapes and colors, allowing children to construct endless creations. It promotes spatial awareness and problem-solving skills. Suitable for children aged 3 and above."
+    },
+    {
+        "picture": "https://t3.ftcdn.net/jpg/01/90/07/52/360_F_190075218_8WYy6NlpvHf16aVvb3jTZsig8EGq2ru0.jpg",
+        "toyName": "Building Blocks",
+        "sellerName": "Karen Roberts",
+        "category": "Mini Fire Track",
+        "sellerEmail": "karenroberts@example.com",
+        "price": 16.99,
+        "rating": 4.9,
+        "availableQuantity": 30,
+        "detailDescription": "This set of building blocks includes various shapes and colors, allowing children to construct endless creations. It promotes spatial awareness and problem-solving skills. Suitable for children aged 3 and above."
+    }
+]
