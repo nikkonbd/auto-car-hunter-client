@@ -16,7 +16,7 @@ const TabsCategory = () => {
                 <TabPanel>
                     <div className='flex gap-6 mt-4'>
                         <div className="card w-96 bg-base-100 shadow-xl">
-                            <figure><img className='h-75' src="https://i.ytimg.com/vi/8a9jzpbFp-o/maxresdefault.jpg" alt="Shoes" /></figure>
+                            <figure><img style={{ height: '220px' }} src="https://i.ytimg.com/vi/8a9jzpbFp-o/maxresdefault.jpg" alt="Shoes" /></figure>
                             <div className="card-body">
                                 <h2 className="card-title">Shoes!</h2>
                                 <p>If a dog chews shoes whose shoes does he choose?</p>
@@ -26,7 +26,7 @@ const TabsCategory = () => {
                             </div>
                         </div>
                         <div className="card w-96 bg-base-100 shadow-xl">
-                            <figure><img className='h-50' src="https://img.freepik.com/premium-photo/closeup-child-hand-playing-with-toy-car-hand-little-kid-pushing-plastic-toy-car-whi_370028-7034.jpg" alt="Shoes" /></figure>
+                            <figure><img style={{ height: '220px' }} src="https://img.freepik.com/premium-photo/closeup-child-hand-playing-with-toy-car-hand-little-kid-pushing-plastic-toy-car-whi_370028-7034.jpg" alt="Shoes" /></figure>
                             <div className="card-body">
                                 <h2 className="card-title">Shoes!</h2>
                                 <p>If a dog chews shoes whose shoes does he choose?</p>
@@ -36,7 +36,7 @@ const TabsCategory = () => {
                             </div>
                         </div>
                         <div className="card w-96 bg-base-100 shadow-xl">
-                            <figure><img src="https://i.ytimg.com/vi/8a9jzpbFp-o/maxresdefault.jpg" alt="Shoes" /></figure>
+                            <figure><img style={{ height: '220px' }} src="https://i.ytimg.com/vi/8a9jzpbFp-o/maxresdefault.jpg" alt="Shoes" /></figure>
                             <div className="card-body">
                                 <h2 className="card-title">Shoes!</h2>
                                 <p>If a dog chews shoes whose shoes does he choose?</p>

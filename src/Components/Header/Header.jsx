@@ -30,7 +30,7 @@ const Header = () => {
                         {navBar}
                     </ul>
                 </div>
-                <a className="btn btn-ghost normal-case text-3xl font-semibold"><Link to={'/'}>AutoCar</Link></a>
+                <a className="btn btn-ghost normal-case text-3xl font-semibold"><Link to={'/'}>Auto Toys Car</Link></a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
