@@ -9,6 +9,7 @@ import Register from '../Layout/Register/Register';
 import Blogs from '../Layout/Blogs/Blogs';
 import AddCarToys from '../Layout/AddCarToys/AddCarToys';
 import AllToys from '../Layout/AllToys/AllToys';
+import SingleToys from '../Layout/SingleToys/SingleToys';
 
 const router = createBrowserRouter([
     {
@@ -38,6 +39,11 @@ const router = createBrowserRouter([
             {
                 path: 'allToys',
                 element: <AllToys></AllToys>
+            },
+            {
+                path: 'singleToys/:id',
+                element: <SingleToys></SingleToys>,
+                // loader: ({ params }) => fetch(`http://localhost:5000/toys/${params.id}`)
             }
         ]
     },

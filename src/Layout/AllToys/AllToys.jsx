@@ -6,7 +6,7 @@ const AllToys = () => {
     const [toys, setToys] = useState([]);
 
     useEffect(() => {
-        fetch('../../../public/all-car-toys.json')
+        fetch('http://localhost:5000/toys')
             .then(res => res.json())
             .then(data => {
                 setToys(data);
@@ -26,6 +26,7 @@ const AllToys = () => {
                 <div className='grid md:grid-cols-3 gap-12'>
                     {
                         toys.map(toy => <CardToys
+                            key={toy._id}
                             toy={toy}
                         ></CardToys>)
                     }

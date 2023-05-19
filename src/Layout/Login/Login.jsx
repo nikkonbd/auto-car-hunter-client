@@ -2,10 +2,27 @@ import React, { useContext } from 'react';
 import login from '../../assets/login.svg';
 import { Link, Navigate } from 'react-router-dom';
 import { AuthContext } from '../../Providers/AuthProviders';
+import { FaBeer, FaGoogle } from 'react-icons/fa';
+import { GoogleAuthProvider, getAuth, signInWithPopup } from 'firebase/auth';
+import app from '../../Firebase/FirebaseConfig';
+
+const provider = new GoogleAuthProvider();
+const auth = getAuth(app);
 
 const Login = () => {
 
     const { signIn } = useContext(AuthContext);
+
+    const handleGoogleLogin = () => {
+        signInWithPopup(auth, provider)
+            .then((result) => {
+                const user = result.user;
+                console.log(user);
+            })
+            .catch(error => {
+                console.log(error);
+            })
+    }
 
 
     const handleLogin = (event) => {
@@ -57,6 +74,7 @@ const Login = () => {
                                 </div>
                             </div>
                         </form>
+                        <button onClick={handleGoogleLogin} className="btn btn-outline mx-8"><FaGoogle className='mr-10 text-orange-600'></FaGoogle> Google Login</button>
                         <label className="label">
                             <p className='ml-8 pb-8'>Don't Have an Account Please? <Link to={'/register'} className='font-medium'>Sign Up</Link></p>
                         </label>
