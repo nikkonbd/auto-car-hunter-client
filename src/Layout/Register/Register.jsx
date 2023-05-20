@@ -22,7 +22,7 @@ const Register = () => {
             .catch(error => {
                 console.log(error);
             })
-
+        event.target.reset();
     }
     return (
         <div className='bg-base-200'>

@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 const CardToys = ({ toy }) => {
     // console.log(toy);
     const { toyName, category, price, availableQuantity, _id } = toy;
+    // console.log(_id)
     return (
         <div>
             <div className="card w-96 bg-base-100 shadow-xl">
@@ -16,7 +17,7 @@ const CardToys = ({ toy }) => {
                         <p>Available Quantity: {availableQuantity}</p>
                     </div>
                     <div className="card-actions justify-end">
-                        <button className="btn btn-warning text-white"><Link to={`/singleToys/${_id}}`}> View Details </Link></button>
+                        <button className="btn btn-warning text-white"><Link to={`/singleToys/${_id}`}>View Details </Link></button>
                         {/* The button to open modal */}
                         {/* <label htmlFor="my-modal-5" className="btn btn-warning">View Details</label> */}
 

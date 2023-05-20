@@ -39,7 +39,9 @@ const Login = () => {
             .catch(error => {
                 console.log(error);
             })
+        event.target.reset();
     }
+
 
     <Navigate to={'/'}></Navigate>
 

@@ -16,8 +16,15 @@ const Header = () => {
         <li><a><Link to={'/'}>Home</Link></a></li>
         <li><Link to={'/allToys'}>All Toys</Link></li>
         <li><a><Link to={'/blogs'}>Blogs</Link></a></li>
-        <li><a><Link to={'/addToys'}>Add a Toys</Link></a></li>
-        {user ? <li><Link onClick={handleLogout} className='font-medium'>Logout</Link></li> : <li className='font-medium'><Link to={'/login'}>Login</Link></li>}
+
+        {
+            user ?
+                <>
+                    <li><a><Link to={'/addToys'}>Add a Toys</Link></a></li>
+                    <li><Link onClick={handleLogout} className='font-medium'>Logout</Link></li>
+                </>
+                : <li className='font-medium'><Link to={'/login'}>Login</Link></li>
+        }
     </>
     return (
         <div className="navbar justify-around bg-base-100">
