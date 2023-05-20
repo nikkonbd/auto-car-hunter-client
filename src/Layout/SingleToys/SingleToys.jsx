@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { useLoaderData, useParams } from 'react-router-dom';
+import { Link, useLoaderData, useParams } from 'react-router-dom';
 
 const SingleToys = () => {
 
@@ -44,6 +44,7 @@ const SingleToys = () => {
                                     <p><strong>Available Quantity:</strong> {availableQuantity}</p>
                                 </div>
                             </div>
+                            <button className='btn btn-md rounded mt-2 text-white btn-warning'><Link to={'/allToys'}>Back To All Toys</Link></button>
                         </div>
                     </div>
                 </div>

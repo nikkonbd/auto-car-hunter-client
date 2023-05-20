@@ -99,7 +99,7 @@ const AddCarToys = () => {
                                 className="border-[1px] w-25 p-2 px-4 rounded border-indigo-950"
                                 {...register("rating")}
                                 placeholder="rating"
-                                type="number"
+                                type="text"
                             />
                         </div>
                         <div>

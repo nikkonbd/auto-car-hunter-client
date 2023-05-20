@@ -28,10 +28,13 @@ const AllToys = () => {
                         {/* head */}
                         <thead>
                             <tr>
+                                <th>
+
+                                </th>
                                 <th>Seller Name</th>
                                 <th>Toy Name</th>
-                                <th>Available Quantity</th>
                                 <th>Sub-Category</th>
+                                <th>Available Quantity</th>
                                 <th>Price</th>
                                 <th>View Details</th>
                             </tr>

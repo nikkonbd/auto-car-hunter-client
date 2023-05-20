@@ -1,10 +1,11 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { AuthContext } from '../../Providers/AuthProviders';
+import SingleToyRow from './SingleToyRow';
 
 const MyToys = () => {
 
     const { user } = useContext(AuthContext);
-    const [toys, setToys] = useState();
+    const [toys, setToys] = useState([]);
 
     const url = `http://localhost:5000/allPost?email=${user?.email}`
     useEffect(() => {
@@ -15,6 +16,24 @@ const MyToys = () => {
                 console.log(data);
             })
     }, [])
+
+    // const handleDelete = (id) => {
+    //     const proceed = confirm('Are you sure you want to delete?')
+    //     if (proceed) {
+    //         fetch(`http://localhost:5000/allPost/${id}`, {
+    //             method: 'DELETE'
+    //         })
+    //             .then(res => res.json())
+    //             .then(data => {
+    //                 console.log(data);
+    //                 if (data.deletedCount > 0) {
+    //                     alert('Deleted SuccessFully!')
+    //                     const remaining = toys.filter(toy => toy._id !== id);
+    //                     setToys(remaining);
+    //                 }
+    //             })
+    //     }
+    // }
 
     return (
         <div>
@@ -31,19 +50,22 @@ const MyToys = () => {
                         <thead>
                             <tr>
                                 <th>
-                                    <label>
-                                        <input type="checkbox" className="checkbox" />
-                                    </label>
+                                    Delete
                                 </th>
+                                <th>Image</th>
                                 <th>Name</th>
-                                <th>Job</th>
-                                <th>Favorite Color</th>
-                                <th></th>
+                                <th>Seller Name</th>
+                                <th>Category</th>
+                                <th>Price</th>
+                                <th>Rating</th>
+                                <th>Quantity</th>
+                                <th>User Email</th>
+                                <th>Details</th>
                             </tr>
                         </thead>
                         <tbody>
                             {/* row 1 */}
-                            <tr>
+                            {/* <tr>
                                 <th>
                                     <label>
                                         <input type="checkbox" className="checkbox" />
@@ -71,7 +93,10 @@ const MyToys = () => {
                                 <th>
                                     <button className="btn btn-ghost btn-xs">details</button>
                                 </th>
-                            </tr>
+                            </tr> */}
+                            {
+                                toys.map(toy => <SingleToyRow key={toy._id} toy={toy}></SingleToyRow>)
+                            }
                         </tbody>
                     </table>
                 </div>
