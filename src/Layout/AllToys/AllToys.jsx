@@ -23,14 +23,37 @@ const AllToys = () => {
                 </div>
             </div>
             <div className='max-w-6xl mx-auto my-10'>
-                <div className='grid md:grid-cols-3 gap-12'>
+                <div className="w-full py-6">
+                    <table className="table w-full">
+                        {/* head */}
+                        <thead>
+                            <tr>
+                                <th>Seller Name</th>
+                                <th>Toy Name</th>
+                                <th>Available Quantity</th>
+                                <th>Sub-Category</th>
+                                <th>Price</th>
+                                <th>View Details</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {
+                                toys.map(toy => <CardToys
+                                    key={toy._id}
+                                    toy={toy}
+                                ></CardToys>)
+                            }
+                        </tbody>
+                    </table>
+                </div>
+                {/* <div className=''>
                     {
                         toys.map(toy => <CardToys
                             key={toy._id}
                             toy={toy}
                         ></CardToys>)
                     }
-                </div>
+                </div> */}
             </div>
         </div>
 
