@@ -13,14 +13,15 @@ const Header = () => {
     }
 
     const navBar = <>
-        <li><a><Link to={'/'}>Home</Link></a></li>
+        <li><Link to={'/'}>Home</Link></li>
         <li><Link to={'/allToys'}>All Toys</Link></li>
-        <li><a><Link to={'/blogs'}>Blogs</Link></a></li>
+        <li><Link to={'/blogs'}>Blogs</Link></li>
 
         {
             user ?
                 <>
-                    <li><a><Link to={'/addToys'}>Add a Toys</Link></a></li>
+                    <li><Link to={'/addToys'}>Add a Toys</Link></li>
+                    <li><Link to={'/myToys'}>My Toys</Link></li>
                     <li><Link onClick={handleLogout} className='font-medium'>Logout</Link></li>
                 </>
                 : <li className='font-medium'><Link to={'/login'}>Login</Link></li>

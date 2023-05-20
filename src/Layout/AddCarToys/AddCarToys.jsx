@@ -60,16 +60,16 @@ const AddCarToys = () => {
                             <input
                                 className="border-[1px] w-[50%] p-2 rounded px-6 border-indigo-950"
                                 {...register("posted")}
-                                placeholder="user name"
-                                type="name"
+                                defaultValue={user?.displayName} placeholder="user name"
+                                type="text"
                             />
                         </div>
                         <div>
                             <p className='font-medium'>User Email:</p>
                             <input
                                 className="border-[1px] w-[50%] rounded p-2 px-6 border-indigo-950"
-                                {...register("postedBy")}
-                                placeholder="your email"
+                                {...register("email")}
+                                defaultValue={user?.email} placeholder="your email"
                                 type="email"
                             />
                         </div>
