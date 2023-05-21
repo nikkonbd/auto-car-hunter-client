@@ -1,6 +1,7 @@
 import React, { useContext, useEffect } from 'react';
 import { useForm } from "react-hook-form";
 import { AuthContext } from '../../Providers/AuthProviders';
+import Swal from 'sweetalert2';
 
 const AddCarToys = () => {
 
@@ -24,7 +25,12 @@ const AddCarToys = () => {
             .then(data => {
                 console.log(data);
                 if (data.insertedId) {
-                    alert('Service Send Successfully!');
+                    alert('Service Add Successfully!');
+                    Swal.fire(
+                        'The Internet?',
+                        'That thing is still around?',
+                        'success'
+                    )
                 }
             })
     };
@@ -44,7 +50,7 @@ const AddCarToys = () => {
                     {/* register your input into the hook by invoking the "register" function */}
                     <div>
                         <p className='font-medium'>Photo Url</p>
-                        <input className='border-[1px] w-[100%] p-2 rounded px-6 border-indigo-950 mr-6' placeholder='photo url' {...register("url")} />
+                        <input className='border-[1px] w-[100%] p-2 rounded px-6 border-indigo-950 mr-6' required placeholder='photo url' {...register("url")} />
                     </div>
 
                     {/* include validation with required or other standard HTML validation rules */}
@@ -62,6 +68,7 @@ const AddCarToys = () => {
                                 {...register("posted")}
                                 defaultValue={user?.displayName} placeholder="user name"
                                 type="text"
+                                required
                             />
                         </div>
                         <div>
@@ -109,6 +116,7 @@ const AddCarToys = () => {
                                 {...register("quantity")}
                                 placeholder="quantity"
                                 type="number"
+                                required
                             />
                         </div>
                     </div>
@@ -117,7 +125,7 @@ const AddCarToys = () => {
                         <input className='border-[1px] w-[100%] p-2 py-6 rounded px-6 border-indigo-950 mr-6' placeholder='Description' {...register("description")} />
                     </div>
                     <div>
-                        <input className='bg-orange-500 py-2 px-4 text-white cursor-pointer' type="submit" value="Add A Toys" />
+                        <input className='bg-orange-500 py-2 px-4 rounded w-[100%] text-white cursor-pointer' type="submit" value="Add A Toys" />
                     </div>
                 </form>
             </div>

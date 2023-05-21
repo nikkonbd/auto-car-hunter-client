@@ -6,7 +6,6 @@ const MyToys = () => {
 
     const { user } = useContext(AuthContext);
     const [toys, setToys] = useState([]);
-    // const [toy, setToy] = useState({});
 
     const url = `http://localhost:5000/addToCar?email=${user?.email}`
     useEffect(() => {
@@ -18,23 +17,23 @@ const MyToys = () => {
             })
     }, [])
 
-    // const handleDelete = (id) => {
-    //     const proceed = confirm('Are you sure you want to delete?')
-    //     if (proceed) {
-    //         fetch(`http://localhost:5000/addToCar/${id}`, {
-    //             method: 'DELETE'
-    //         })
-    //             .then(res => res.json())
-    //             .then(data => {
-    //                 console.log(data);
-    //                 // if (data.deletedCount > 0) {
-    //                 //     alert('Deleted SuccessFully!')
-    //                 //     const remaining = toys.filter(toy => toy._id !== id);
-    //                 //     setToys(remaining);
-    //                 // }
-    //             })
-    //     }
-    // }
+    const handleDelete = (id) => {
+        const proceed = confirm('Are you sure you want to delete?')
+        if (proceed) {
+            fetch(`http://localhost:5000/addToCar/${id}`, {
+                method: 'DELETE'
+            })
+                .then(res => res.json())
+                .then(data => {
+                    console.log(data);
+                    if (data.deletedCount > 0) {
+                        alert('Deleted SuccessFully!')
+                        const remaining = toys.filter(toy => toy._id !== id);
+                        setToys(remaining);
+                    }
+                })
+        }
+    }
 
     return (
         <div>
@@ -96,7 +95,7 @@ const MyToys = () => {
                                 </th>
                             </tr> */}
                             {
-                                toys.map(toy => <SingleToyRow key={toy._id} toy={toy} ></SingleToyRow>)
+                                toys.map(toy => <SingleToyRow handleDelete={handleDelete} key={toy._id} toy={toy} ></SingleToyRow>)
                             }
                         </tbody>
                     </table>
