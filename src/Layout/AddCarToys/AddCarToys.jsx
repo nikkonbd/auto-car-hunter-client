@@ -14,7 +14,7 @@ const AddCarToys = () => {
         formState: { errors } } = useForm();
     const onSubmit = data => {
         console.log(data)
-        fetch('http://localhost:5000/addToCar', {
+        fetch('https://toys-car-pro-server.vercel.app/addToCar', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

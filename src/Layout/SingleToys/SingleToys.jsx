@@ -8,13 +8,6 @@ const SingleToys = () => {
 
     const { picture, toyName, detailDescription, category, price, availableQuantity, _id, sellerName, sellerEmail, rating } = singleToy;
 
-    // const { id } = useParams();
-    // useEffect(() => {
-    //     fetch(`http://localhost:5000/toys/${id}`)
-    //         .then(res => res.json())
-    //         .then(data => console.log(data))
-    // }, [id])
-
     return (
         <div>
             <div className=''>
