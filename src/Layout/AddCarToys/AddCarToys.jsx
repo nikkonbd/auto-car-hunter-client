@@ -25,10 +25,10 @@ const AddCarToys = () => {
             .then(data => {
                 console.log(data);
                 if (data.insertedId) {
-                    alert('Service Add Successfully!');
+                    // alert('Service Add Successfully!');
                     Swal.fire(
-                        'The Internet?',
-                        'That thing is still around?',
+                        'SuccessFully?',
+                        'Car Toys Add?',
                         'success'
                     )
                 }
