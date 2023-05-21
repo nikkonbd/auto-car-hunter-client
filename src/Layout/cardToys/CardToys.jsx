@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const CardToys = ({ toy }) => {
-    // console.log(toy);
     const { sellerName, toyName, category, price, availableQuantity, _id } = toy;
     // console.log(_id)
     return (
