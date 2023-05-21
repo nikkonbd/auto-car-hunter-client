@@ -49,14 +49,6 @@ const AllToys = () => {
                         </tbody>
                     </table>
                 </div>
-                {/* <div className=''>
-                    {
-                        toys.map(toy => <CardToys
-                            key={toy._id}
-                            toy={toy}
-                        ></CardToys>)
-                    }
-                </div> */}
             </div>
         </div>
 
