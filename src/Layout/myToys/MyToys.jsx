@@ -6,6 +6,7 @@ const MyToys = () => {
 
     const { user } = useContext(AuthContext);
     const [toys, setToys] = useState([]);
+    // const [toy, setToy] = useState({});
 
     const url = `http://localhost:5000/addToCar?email=${user?.email}`
     useEffect(() => {
@@ -26,11 +27,11 @@ const MyToys = () => {
     //             .then(res => res.json())
     //             .then(data => {
     //                 console.log(data);
-    //                 if (data.deletedCount > 0) {
-    //                     alert('Deleted SuccessFully!')
-    //                     const remaining = toys.filter(toy => toy._id !== id);
-    //                     setToys(remaining);
-    //                 }
+    //                 // if (data.deletedCount > 0) {
+    //                 //     alert('Deleted SuccessFully!')
+    //                 //     const remaining = toys.filter(toy => toy._id !== id);
+    //                 //     setToys(remaining);
+    //                 // }
     //             })
     //     }
     // }

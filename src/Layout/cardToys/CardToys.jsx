@@ -8,7 +8,7 @@ const CardToys = ({ toy }) => {
     return (
         <tr className=''>
             <td></td>
-            <td>{sellerName}</td>
+            <td><strong>{sellerName}</strong></td>
             <td>{toyName}</td>
             <td>{category}</td>
             <td>{availableQuantity}</td>

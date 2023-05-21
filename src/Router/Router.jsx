@@ -12,11 +12,13 @@ import AllToys from '../Layout/AllToys/AllToys';
 import SingleToys from '../Layout/SingleToys/SingleToys';
 import MyToys from '../Layout/myToys/MyToys';
 import PrivateRoute from './PrivateRoute';
+import PageNotFound from '../Layout/PagenotFound/PageNotFound';
 
 const router = createBrowserRouter([
     {
         path: "/",
         element: <Main></Main>,
+        errorElement: <PageNotFound></PageNotFound>,
         children: [
             {
                 path: '/',
